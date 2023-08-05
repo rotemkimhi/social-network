@@ -1,4 +1,5 @@
-//api/auth/login.ts
+// //api/auth/login.ts
+//========VULNERABLE_VERSION=========
 import type { NextApiRequest, NextApiResponse } from 'next'
 import bcrypt from 'bcrypt'
 import jwt from 'jsonwebtoken'
@@ -50,7 +51,9 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     name: user.name
   })
 }
-// // pages/api/auth/login.ts
+
+// //========PROTECTED_VERSION=========
+// pages/api/auth/login.ts
 // import { PrismaClient } from '@prisma/client';
 // import bcrypt from 'bcrypt';
 // import jwt from 'jsonwebtoken';
